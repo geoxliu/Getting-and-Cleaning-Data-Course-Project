@@ -1,9 +1,9 @@
 # Getting-and-Cleaning-Data-Course-Project
 
-This repo was created to finish the assignment for week 4 of Getting and Cleaning Data Coursera course.
-* First, download and unzip the data file into your R working directory.
-* Second, download the R source code into your R working directory.
-* Finally, execute R source code to generate tidy data file.
+This repo was created for the assignment for week 4 of Getting and Cleaning Data Coursera course.
+* Download and unzip the data file into your R working directory.
+* Download the R source code into your R working directory.
+* Execute R source code to generate tidy data file.
 
 ### Data description
 The variables in the data X are sensor signals measured with waist-mounted smartphone from 30 subjects. The variable in the data Y indicates activity type the subjects performed during recording.
@@ -20,12 +20,12 @@ The new generated dataset contained variables calculated based on the mean and s
 * Read subject index.
 
 1. Merges the training and the test sets to create one data set.
-Use rbind command to combine training and test set
+Use rbind command to combine training and test set.
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
-Use grep command to get column indexes for variable name contains "mean()" or "std()"
-3. Uses descriptive activity names to name the activities in the data set
-Convert activity labels to characters and add a new column as factor
+Use grep command to get column indexes for variable name contains "mean()" or "std()".
+3. Uses descriptive activity names to name the activities in the data set.
+Convert activity labels to characters and add a new column as factor.
 4. Appropriately labels the data set with descriptive variable names.
-Give the selected descriptive names to variable columns
+Give the selected descriptive names to variable columns.
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-Use pipeline command to create a new tidy dataset with command group_by and summarize_each in dplyr package
+Use pipeline command to create a new tidy dataset with command group_by and summarize_each in dplyr package.
